@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMG Consultoria</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/image-removebg-preview 1.png" type="image/svg+xml">
+
+  <!-- Custom CSS link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Google Fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700;900&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body onload="hideLoadingScreen()">
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <img src="./assets/images/WhatsApp_Image_2024-06-28_at_00.49.19-removebg-preview.png" alt="CMG Consultoria Logo" class="loading-logo">
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#">
+        <img src="./assets/images/image-removebg-preview 1.png" alt="Landio logo">
+      </a>
+      <button class="menu-toggle-btn" data-nav-toggle-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a href="#hero" class="navbar-link">Inicio</a></li>
+          <li><a href="#features" class="navbar-link">Limpezas</a></li>
+          <li><a href="#blog" class="navbar-link">Serviços</a></li>
+          <li><a href="#contact" class="navbar-link">Contato</a></li>
+          <li><a href="http://192.168.12.103:8888/mapos/index.php/mine" class="navbar-link">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <!-- HERO Section -->
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="h1 hero-title">A solução inteligente para suas finanças</h1>
+            <p class="hero-text">Seu parceiro em cada passo financeiro. Investindo hoje para um amanhã próspero</p>
+            <p class="form-text">
+              <span>🥳</span>Envie-nos uma mensagem e nossa equipe de especialistas entrará em contato rapidamente.
+            </p>
+            <form action="" class="hero-form">
+              <input type="tel" name="email" required placeholder="Número de celular" class="email-field">
+              <button type="submit" class="btn btn-primary">
+                <a href="https://wa.me/5511959888690?text=Ol%C3%A1!%20Estou%20interessado%20em%20saber%20mais%20sobre%20como%20limpar%20meu%20nome.%20Poderia%20me%20fornecer%20mais%20detalhes?">Enviar</a>
+              </button>
+            </form>
+          </div>
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" alt="Hero image">
+          </figure>
+        </div>
+      </section>
+
+      <!-- ABOUT Section -->
+      <section class="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-icon">
+              <img src="./assets/images/logo06.png" alt="">
+            </div>
+            <h2 class="h2 about-title">Sobre nós</h2>
+            <p class="about-text">
+              Somos a CMG consultoria financeira! Uma empresa consolidada a mais de 10 anos no mercado, possuímos CNPJ e escritório próprio em Alphaville-SP!
+            </p>
+            <!-- Botão que aciona o card -->
+            <button class="btn btn-outline" id="saiba-mais-btn">Saiba mais</button>
+
+            <!-- Overlay escurecido de fundo -->
+            <div class="overlay" id="overlay"></div>
+
+            <!-- Card com informações -->
+            <div class="card" id="info-card">
+              <span class="close-btn" id="close-card-btn">&times;</span>
+              <h2>História de Superação da CMG Consultoria Financeira</h2>
+              <p>A CMG Consultoria Financeira nasceu de um sonho de oferecer soluções financeiras eficazes e acessíveis para todos. Fundada há mais de uma década, a empresa enfrentou desafios iniciais com poucos recursos, mas com determinação e uma visão clara, cresceu e conquistou a confiança de muitos clientes. Hoje, com um escritório em Alphaville-SP e uma equipe dedicada, a CMG tem orgulho de ter ajudado milhares de pessoas a superar dificuldades financeiras e alcançar seus objetivos. Oferecemos uma gama de serviços, incluindo Limpeza de nome, Limpeza JUSBRASIL e ESCAVADOR, Limpeza CCF (cheque sem fundo), Atualizações cadastrais CONCENTRE, Limpeza Bacen, Saque aniversário FGTS, Empréstimo consignado, Empréstimo pessoal, Certificado digital, Consulta, Financiamento de veículos, Carros por assinatura. Estamos aqui para ajudar você a alcançar seus objetivos. Como podemos ajudar hoje?</p>
+            </div>
+          </div>
+
+          <ul class="about-list">
+            <li>
+              <div class="about-card">
+                <div class="card-icon">
+                  <ion-icon name="thumbs-up"></ion-icon>
+                </div>
+                <h3 class="h3 card-title">Consultas</h3>
+                <p class="card-text">Oferecemos uma primeira consulta gratuita aos nossos clientes, na qual realizamos uma análise nos principais órgãos de proteção ao consumidor.</p>
+              </div>
+            </li>
+            <li>
+              <div class="about-card">
+                <div class="card-icon">
+                  <ion-icon name="trending-up"></ion-icon>
+                </div>
+                <h3 class="h3 card-title">Aumento de Score</h3>
+                <p class="card-text">Com esse serviço terá a possibilidade de tentar novas linhas de crédito, financiamentos e se reerguer financeiramente.</p>
+              </div>
+            </li>
+            <li>
+              <div class="about-card">
+                <div class="card-icon">
+                  <ion-icon name="shield-checkmark"></ion-icon>
+                </div>
+                <h3 class="h3 card-title">Segurança</h3>
+                <p class="card-text">Todos nossos serviços são realizados a partir da formalização de contratos para sua e nossa segurança!</p>
+              </div>
+            </li>
+            <li>
+              <div class="about-card">
+                <div class="card-icon">
+                  <ion-icon name="server"></ion-icon>
+                </div>
+                <h3 class="h3 card-title">Ação judicial</h3>
+                <p class="card-text">Todos os nossos serviços são realizados por uma ação judicial a partir do Art.42 do código de defesa do consumidor.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- FEATURES Section -->
+      <section class="features" id="features">
+        <div class="container">
+          <h2 class="h2 section-title">Inovando suas finanças</h2>
+          <p class="section-text">Solucione suas necessidades financeiras com nossa tecnologia e análise avançada, adaptada para você.</p>
+
+          <div class="features-wrapper">
+            <figure class="features-banner">
+              <img src="./assets/images/features-img-1.png" alt="illustration art">
+            </figure>
+            <div class="features-content">
+              <p class="features-content-subtitle">
+                <ion-icon name="sparkles"></ion-icon>
+                <span>Oferecemos soluções personalizadas para clientes </span>
+              </p>
+              <h3 class="features-content-title">
+                Limpeza <strong>de</strong> nome <strong>para</strong> CPF <strong>e CNPJ</strong>
+              </h3>
+              <p class="features-content-text">
+                Nosso serviço vai omitir seu histórico, deixando o nome limpo e com uma cara nova as novas instituições que você entrar em contato, tendo também o 1 ano de blindagem que vai te possibilitar as tentativas de crédito e compra!
+              </p>
+              <ul class="features-list">
+                <li class="features-list-item">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                  <p>Efetivação de serviço é em até 30 dias úteis</p>
+                </li>
+                <li class="features-list-item">
+                  <ion-icon name="megaphone-outline"></ion-icon>
+                  <p>Nosso serviço tem 12 meses de garantia</p>
+                </li>
+              </ul>
+              <div class="btn-group">
+                <!-- Link que aciona o card -->
+                <a href="#" class="btn btn-primary" id="veja-mais-link">Veja mais</a>
+                <!-- Overlay escurecido de fundo -->
+                <div class="overlay" id="overlay-veja-mais"></div>
+                <!-- Card com informações -->
+                <div class="card" id="card-veja-mais">
+                  <span class="close-btn" id="close-card-veja-mais">&times;</span>
+                  <h2>Limpeza de nome para CPF e CNPJ</h2>
+                  <p>Referente à limpeza de nome, nós realizamos uma consulta e, em seguida, uma análise completa de suas pendências para lhe passarmos o valor da limpeza. Na realização da limpeza de nome, nós não quitamos suas pendências, mas sim as omitimos de seu histórico, deixando seu nome limpo e com uma cara nova para as novas instituições que entrar em contato. O seu nome estará blindado por 1 ano, porém, caso volte a realizar pendências, as antigas dívidas poderão voltar a aparecer. Por isso, estabelecimentos e bancos nos quais já possuiu dívidas devem ser evitados.</p>
+                </div>
+                <a href="https://wa.me/5511959888690?text=Ol%C3%A1!%20Tenho%20um%20grande%20interesse%20em%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20limpeza%20de%20nome.%20Poderia%20me%20fornecer%20detalhes%20adicionais,%20por%20favor?" class="btn btn-secondary">Garanta agora</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-wrapper">
+            <figure class="features-banner">
+              <img src="./assets/images/features-img-2.png" alt="illustration art">
+            </figure>
+            <div class="features-content">
+              <p class="features-content-subtitle">
+                <ion-icon name="sparkles"></ion-icon>
+                <span>Transforme sua vida financeira hoje mesmo</span>
+              </p>
+              <h3 class="features-content-title">
+                Limpeza <strong>do</strong> Bacen
+              </h3>
+              <p class="features-content-text">
+                Este serviço remove impeditivos do cliente, como VENCIDOS e PREJUÍZOS. VENCIDOS são dívidas não pagas nos últimos 5 anos, removidas dos órgãos de crédito, mas registradas no BACEN. PREJUÍZOS são dívidas pagas com desconto, também registradas no BACEN. Ao eliminá-los, o nome do cliente fica positivo, nas categorias "A VENCER" e "LIMITE DE CRÉDITO".
+              </p>
+              <ul class="features-list">
+                <li class="features-list-item">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                  <p>Efetivação de serviço é em até 120 dias úteis</p>
+                </li>
+                <li class="features-list-item">
+                  <ion-icon name="megaphone-outline"></ion-icon>
+                  <p>Nosso serviço tem 12 meses de garantia</p>
+                </li>
+              </ul>
+              <div class="btn-group">
+                <!-- Link que aciona o card -->
+                <a href="#" class="btn btn-primary" id="veja-mais-link-2">Veja mais</a>
+                <!-- Overlay escurecido de fundo -->
+                <div class="overlay" id="overlay-veja-mais-2"></div>
+                <!-- Card com informações -->
+                <div class="card" id="card-veja-mais-2">
+                  <span class="close-btn" id="close-card-veja-mais-2">&times;</span>
+                  <h2>Limpeza do Bacen</h2>
+                  <p>LIMPEZA BACEN (Banco Central) Esse serviço consiste em retirar os impeditivos do cliente, VENCIDOS E PREJUÍZOS. Vencidos: Tudo que o cliente deixou de pagar durante o período de 5 anos, que caducou (saiu dos órgãos de proteção ao crédito), porém foram inclusos no BACEN. Prejuízos: Tudo que o cliente pagou com desconto. Os bancos aceitam e até propõem o pagamento com desconto, porém assim que o cliente paga essas dívidas com desconto, imediatamente ele vai parar no BACEN. Sendo retirados os VENCIDOS e PREJUÍZOS, deixaremos o nome do cliente positivo, ou seja, na aba “A VENCER” E “LIMITE DE CRÉDITO”.</p>
+                </div>
+                <a href="https://wa.me/5511959888690?text=Ol%C3%A1!%20Estou%20interessado%20em%20saber%20mais%20sobre%20como%20limpar%20meu%20%20Bacen.%20Poderia%20me%20fornecer%20mais%20detalhes?" class="btn btn-secondary">Garanta agora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BLOG Section -->
+      <section class="blog" id="blog">
+        <div class="container">
+          <h2 class="h2 section-title">Serviços</h2>
+          <p class="section-text">Está procurando soluções eficientes para os seus problemas? Conheça nossos serviços e descubra como podemos ajudar você a alcançar seus objetivos.</p>
+          <ul class="blog-list">
+            <li>
+              <div class="blog-card">
+                <figure class="blog-banner">
+                  <img src="./assets/images/digital-graph-with-businessman-hand-overlay.jpg" alt="Best Traveling Place">
+                </figure>
+                <div class="blog-meta">
+                  <span>
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <time datetime="2021-04-10">20 dias úteis</time>
+                  </span>
+                  <span>
+                    <ion-icon name="person-outline"></ion-icon>
+                    <p>CPF/CNPJ</p>
+                  </span>
+                </div>
+                <h3 class="blog-title">Aumento de Score</h3>
+                <p class="blog-text">Temos o serviço novo de limpeza de histórico de consultas e dívidas prescritas! Que auxilia no aumento do seu Score!</p>
+              </div>
+            </li>
+            <li>
+              <div class="blog-card">
+                <figure class="blog-banner">
+                  <img src="./assets/images/business-people-shaking-hands-finishing-up-meeting.jpg" alt="Private Meeting Room">
+                </figure>
+                <div class="blog-meta">
+                  <span>
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <time datetime="2021-04-10">Até em 1 dia</time>
+                  </span>
+                  <span>
+                    <ion-icon name="person-outline"></ion-icon>
+                    <p>CPF</p>
+                  </span>
+                </div>
+                <h3 class="blog-title">Empréstimo pessoal</h3>
+                <p class="blog-text">Oferecemos empréstimo pessoal de duas formas: via conta de luz, com parcelas adicionadas à conta de energia, ou via boleto bancário, com análise de crédito para definir o valor e as parcelas.</p>
+              </div>
+            </li>
+            <li>
+              <div class="blog-card">
+                <figure class="blog-banner">
+                  <img src="./assets/images/business-woman-looking-professional-laptop-working-marketing-graphs-project.jpg" alt="The Best Business Ideas">
+                </figure>
+                <div class="blog-meta">
+                  <span>
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <time datetime="2021-04-10">30 dias úteis</time>
+                  </span>
+                  <span>
+                    <ion-icon name="person-outline"></ion-icon>
+                    <p>admin</p>
+                  </span>
+                </div>
+                <h3 class="blog-title">JusBrasil</h3>
+                <p class="blog-text">Nossa limpeza de JusBrasil remove totalmente seu nome/CPF/CNPJ das pesquisas no Google e Escavador, eliminando apontamentos negativos e garantindo total eficiência.</p>
+              </div>
+            </li>
+            <li>
+              <div class="blog-card">
+                <figure class="blog-banner">
+                  <img src="./assets/images/business-people-meeting.jpg" alt="Best Traveling Place">
+                </figure>
+                <div class="blog-meta">
+                  <span>
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <time datetime="2021-04-10">20 dias úteis</time>
+                  </span>
+                  <span>
+                    <ion-icon name="person-outline"></ion-icon>
+                    <p>CPF/CNPJ</p>
+                  </span>
+                </div>
+                <h3 class="blog-title">Concentre</h3>
+                <p class="blog-text">Aumentamos seu Raiting para maior classificação que há (AAA), juntamente com o aumento da atualização de sua renda presumida, capacidade de crédito para haver maior chances de linhas de crédito no mercado.</p>
+              </div>
+            </li>
+            <li>
+              <div class="blog-card">
+                <figure class="blog-banner">
+                  <img src="./assets/images/happy-freelancer-with-tablet-laptop-computer-coffee-shop.jpg" alt="Best Traveling Place">
+                </figure>
+                <div class="blog-meta">
+                  <span>
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <time datetime="2021-04-10">20 dias úteis</time>
+                  </span>
+                  <span>
+                    <ion-icon name="person-outline"></ion-icon>
+                    <p>CPF/CNPJ</p>
+                  </span>
+                </div>
+                <h3 class="blog-title">Antecipação de seu FGTS</h3>
+                <p class="blog-text">Antecipação de seu FGTS, baseia-se em realizar a retirada antecipada do valor que seria recebido futuramente a cada data de seu aniversário, assim recebendo diretamente o valor que só seria recebido em um futuro distante.</p>
+              </div>
+            </li>
+            <li>
+              <div class="blog-card">
+                <figure class="blog-banner">
+                  <img src="./assets/images/young-concentrated-businesswoman-glasses-striped-shirt-working-with-papers-home.jpg" alt="Best Traveling Place">
+                </figure>
+                <div class="blog-meta">
+                  <span>
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <time datetime="2021-04-10">10 dias úteis</time>
+                  </span>
+                  <span>
+                    <ion-icon name="person-outline"></ion-icon>
+                    <p>CPF/CNPJ</p>
+                  </span>
+                </div>
+                <h3 class="blog-title">CCF</h3>
+                <p class="blog-text">Removemos o apontamento do CCF em até 10 dias úteis, desde que o cheque não esteja protestado e o cliente forneça as certidões dos cartórios e a microfilmagem dos cheques. O custo do frete das cartas é do cliente.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CONTACT Section -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <h2 class="h2 section-title">Contato</h2>
+          <p class="section-text">Estamos aqui para oferecer soluções e ajudar você a alcançar seus objetivos.</p>
+          <div class="contact-wrapper">
+            <form action="" class="contact-form">
+              <div class="wrapper-flex">
+                <div class="input-wrapper">
+                  <label for="name">Nome</label>
+                  <input type="text" name="name" id="name" required placeholder="Nome completo" class="input-field">
+                </div>
+                <div class="input-wrapper">
+                  <label for="email">Número</label>
+                  <input type="text" name="email" id="email" required placeholder="(xx) xxxxx-xxxx" class="input-field">
+                </div>
+              </div>
+              <label for="message">Descreva qual serviço gostaria</label>
+              <textarea name="message" id="message" required placeholder="Mensagem" class="input-field"></textarea>
+              <button type="submit" class="btn btn-primary">
+                <span>Enviar</span>
+                <ion-icon name="paper-plane-outline"></ion-icon>
+              </button>
+            </form>
+            <ul class="contact-list">
+              <li>
+                <a href="mailto:support@website.com" class="contact-link">
+                  <ion-icon name="mail-outline"></ion-icon>
+                  <span>contato@cmgconsultoriafinanceira.com.br</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="contact-link">
+                  <ion-icon name="globe-outline"></ion-icon>
+                  <span>www.CMGConsultoria.com.br</span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+0011234567890" class="contact-link">
+                  <ion-icon name="call-outline"></ion-icon>
+                  <span>+55 11 95988-8690</span>
+                </a>
+              </li>
+              <li>
+                <div class="contact-link">
+                  <ion-icon name="time-outline"></ion-icon>
+                  <span>8:00 AM - 18:00 PM</span>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="contact-link">
+                  <ion-icon name="location-outline"></ion-icon>
+                  <address>ALAMEDA ARAGUAIA, 933 (EDIFICIO ALPHA ENTERPRISE - 8º ANDAR), ALPHAVILLE, BARUERI/SP, 06455-000</address>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo06.png" alt="Landio logo">
+          </a>
+          <p class="footer-text">
+            Nossa empresa, que está consolidada há mais de 10 anos no mercado financeiro. Temos orgulho em possuir CNPJ e contamos com um escritório próprio localizado em Alphaville-SP, atendendo clientes em todo o Brasil.
+          </p>
+          <ul class="social-list">
+            <li>
+              <a href="https://www.instagram.com/cmgconsultoria/" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/cmgconsultoria/" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-link-box">
+          <ul class="footer-list">
+            <li>
+              <p class="footer-item-title">Páginas</p>
+            </li>
+            <li><a href="#" class="footer-link">Home</a></li>
+            <li><a href="#" class="footer-link">Limpeza</a></li>
+            <li><a href="#" class="footer-link">Serviços</a></li>
+            <li><a href="#" class="footer-link">Contato</a></li>
+          </ul>
+          <ul class="footer-list">
+            <li>
+              <p class="footer-item-title">Contato</p>
+            </li>
+            <li><a href="#" class="footer-link">+55 11 95988-8690</a></li>
+            <li><a href="#" class="footer-link">+55 11 93752-2621</a></li>
+            <li><a href="#" class="footer-link">+55 11 97880-4574</a></li>
+          </ul>
+          <ul class="footer-list">
+            <li>
+              <p class="footer-item-title">Suporte</p>
+            </li>
+            <li><a href="#" class="footer-link">Perguntas</a></li>
+            <li><a href="#" class="footer-link">Dúvidas</a></li>
+            <li><a href="#" class="footer-link">Segurança</a></li>
+            <li><a href="#" class="footer-link">Ação Judicial</a></li>
+            <li><a href="#" class="footer-link">Garantia</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">&copy; 2024 <a href="">cmgconsultoriafinanceira</a>. All Right Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JS link -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- Ionicons link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
